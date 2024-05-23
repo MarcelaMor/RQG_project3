@@ -31,4 +31,4 @@ selfControl = [
 'No man is free who is not master of himself. - Epictetus'
 ]
 
-
+print("Welcome to the Random Quote Generator! Please make choice.")
