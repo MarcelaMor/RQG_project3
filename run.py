@@ -2,7 +2,8 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
-# This my "Random Quote Generator" project for the Python course I used the "Dice Roll Generator" from https://hackr.io/blog/python-projects as guidance.
+# This my "Random Quote Generator" project for the Python course I used the "Dice Roll Generator" -
+# from https://hackr.io/blog/python-projects as guidance also https://www.javatpoint.com/create-a-quote-generator-in-python.
 
 # Sketching out the program flow:
 # 1. present user with a choice of quote style
@@ -14,6 +15,7 @@
 
 import random
 
+#These are the list that contain the quotes for the user to choose from.
 innerStrength = [
 'How long are you going to wait before you demand the best for yourself? - Epictetus',
 'It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult. - Seneca',
@@ -31,4 +33,16 @@ selfControl = [
 'No man is free who is not master of himself. - Epictetus'
 ]
 
+#This is the welcome message and the user choice input.
 print("Welcome to the Random Quote Generator! Please make choice.")
+
+#This is the user choice input.
+choice = input("Choose a category: 1 for Inner Strength, 2 for Self Control: ")
+
+#this is the function that will match the user choice with the list of quotes.
+if choice == '1':
+    print(random.choice(innerStrength))
+elif choice == '2':
+    print(random.choice(selfControl))
+else:
+    print("Invalid choice. Please enter 1 or 2.")
