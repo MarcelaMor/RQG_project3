@@ -49,3 +49,8 @@ while True:
         print(random.choice(selfControl))
     else:
         print("Invalid choice. Please enter 1 or 2.")
+    
+    #Added this line for a new run    
+    newRun = input("Would you like another quote? (yes/no): ")
+    if newRun.lower() not in ['yes', 'y']:
+        break 
