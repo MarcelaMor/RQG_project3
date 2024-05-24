@@ -50,6 +50,7 @@ while True:
         print(random.choice(selfControl))
     else:
         print("Invalid choice. Please enter 1 or 2.")
+        continue #Added this line to go back to the beginning of the loop if the input is invalid.
     
     #Added "while" so it keeps asking if a new quote is desired until a valid input is entered.
     while True:
