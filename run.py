@@ -13,6 +13,7 @@
 # 5. The program will randomly select a quote from the list and print it to the user.
 # 6. The program will not ask the user for another quote and will end with a "namaste" message.
 
+import sys #imported sys module to use sys.exit() function and exit the app.
 import random
 
 #These are the list that contain the quotes for the user to choose from.
@@ -50,7 +51,14 @@ while True:
     else:
         print("Invalid choice. Please enter 1 or 2.")
     
-    #Added this line for a new run    
-    newRun = input("Would you like another quote? (yes/no): ")
-    if newRun.lower() not in ['yes', 'y']:
-        break 
+    #Added "while" so it keeps asking if a new quote is desired until a valid input is entered.
+    while True:
+    #Added this line for a new run
+        newRun = input("Would you like another quote? Type 'yes' or 'no': ")
+        #used single quotes to avoid syntax error
+        if newRun.lower() in ['yes', 'y'] :
+            break
+        elif newRun.lower() in ['no', 'n']:
+            sys.exit("Bye!") #Added this line to exit the app
+        else:
+            print("Invalid input. Please type 'yes' or 'no'.")
