@@ -11,10 +11,10 @@
 # 3. Program proccess the number, there will be a function that matches the number with the list that matches the user choice of quote style.
 # 4. The lists are stored in the program and will be named according to the style of the quotes, e.g inner_strength[a, b, c,] or guidance_quotes[a, b, c,].
 # 5. The program will randomly select a quote from the list and print it to the user.
-# 6. The program will not ask the user for another quote and will end with a "namaste" message.
+# 6. The program will not ask the user for another quote and will end with a message.
 
-import sys #imported sys module to use sys.exit() function and exit the app.
-import random
+import sys #imported sys module to use sys.exit() function and exit the app (google search).
+import random #imported as per the "Dice Roll Generator" example.
 
 #These are the list that contain the quotes for the user to choose from.
 innerStrength = [
@@ -37,7 +37,7 @@ selfControl = [
 #This is the welcome message and the user choice input.
 print("Welcome to the Random Quote Generator! Please make choice.")
 
-#Added this line to keep the app running
+#Added this line to keep the app running (dice roll generator example).
 while True:
 
     #This is the user choice input.
