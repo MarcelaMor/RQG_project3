@@ -36,13 +36,16 @@ selfControl = [
 #This is the welcome message and the user choice input.
 print("Welcome to the Random Quote Generator! Please make choice.")
 
-#This is the user choice input.
-choice = input("Choose a category: 1 for Inner Strength, 2 for Self Control: ")
+#Added this line to keep the app running
+while True:
 
-#this is the function that will match the user choice with the list of quotes.
-if choice == '1':
-    print(random.choice(innerStrength))
-elif choice == '2':
-    print(random.choice(selfControl))
-else:
-    print("Invalid choice. Please enter 1 or 2.")
+    #This is the user choice input.
+    choice = input("Choose a category: 1 for Inner Strength, 2 for Self Control: ")
+
+    #this is the function that will match the user choice with the list of quotes.
+    if choice == '1':
+        print(random.choice(innerStrength))
+    elif choice == '2':
+        print(random.choice(selfControl))
+    else:
+        print("Invalid choice. Please enter 1 or 2.")
