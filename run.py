@@ -52,7 +52,7 @@ selfControl = [
 ]
 
 # Welcome message and the user choice input.
-print("Welcome to the Random Quote Generator! Please make choice.")
+print("Welcome to the Random Quote Generator! Please make a choice.")
 
 while True:
 
@@ -68,7 +68,8 @@ while True:
         print(random.choice(selfControl))
     else:
         print("Invalid choice. Please enter 1 or 2.")
-        # Added 'continue' to proceed with the loop if the input is invalid.
+        # Added 'continue' to proceed with the
+        # outer loop if the input is invalid.
         continue
 
     # Added 'while' to keep asking if a
